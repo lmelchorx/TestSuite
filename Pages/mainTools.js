@@ -40,6 +40,13 @@ class mainTools{
         await driver.wait(webdriver.until.elementLocated(By.xpath(`//tr[td[contains(text(), '${userName}')]]`), 5000));
     }
 
+    async checkDeductions(userName, dependants){
+        const deductions = (2000 - (((dependants*500) + 1000)/26)).toFixed(2);
+        const userRow =  await driver.findElement(By.xpath(`//tr[td[contains(text(), '${userName}')]]`));
+        const netPay = await userRow.findElement(By.xpath('./td[8]')).getText();
+        assert.equal(netPay, deductions);
+     }
+
     async deleteUser(userName){
        const userRow =  await driver.findElement(By.xpath(`//tr[td[contains(text(), '${userName}')]]`));
        const userID = await userRow.findElement(By.xpath('./td[1]')).getText();
