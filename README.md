@@ -7,3 +7,11 @@
  npm run test ./Tests    
 
  The suite will run the test in the order of the pages 
+
+ Test framework used : MOCHA WITHH NODE JS  
+ https://nodejs.org/en/download/
+ https://mochajs.org/#installation
+
+ Once node js and mocha are installed, install selenium webdriver using thhe cli 
+
+$ npm install selenium-webdriver
