@@ -29,5 +29,6 @@ describe('TestSuite', function(){
 
         it('delete user', async function(){
             await modelPage.deleteUser("tom");
+            await modelPage.closeBrowser();
             })
 })
