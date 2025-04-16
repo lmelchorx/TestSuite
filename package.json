@@ -1,0 +1,17 @@
+{
+  "name": "testsuite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 60000"
+  },
+  "author": "Luis MM",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chromedriver": "^134.0.5",
+    "dotenv": "^16.5.0",
+    "mocha": "^11.1.0",
+    "selenium-webdriver": "^4.30.0"
+  }
+}
