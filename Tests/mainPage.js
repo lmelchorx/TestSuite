@@ -1,5 +1,4 @@
 const { utils } = require('mocha');
-const loginpage = require('../Pages/modelPage');
 const modelPage = require('../Pages/modelPage');
 require('dotenv').config();
 describe('TestSuite', function(){
